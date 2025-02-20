@@ -1,0 +1,144 @@
+\documentclass{beamer}
+%\setbeameroption{show notes on second screen=right} % Both
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+% Theme choice:
+\usetheme{Boadilla}
+\usepackage{tikz}
+\usepackage{tikz-feynman}
+\usepackage{animate}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{multicol}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{caption}
+\captionsetup{singlelinecheck=false}
+\usefonttheme[onlymath]{serif}
+%\usepackage{hyperref}
+%\hypersetup{colorlinks = true,linkcolor = black,filecolor= black,urlcolor= black}
+%\usepackage{subcaption}
+\usepackage[backend=bibtex,bibencoding=utf8,doi=false,isbn=false,url=false,eprint=false,indexing=false,style=authortitle]{biblatex}
+\addbibresource{library}
+\AtEveryBibitem{%
+	\clearname{translator}%
+	\clearlist{publisher}%
+	\clearfield{pagetotal}%
+}
+\usepackage{MnSymbol,wasysym}
+\usepackage[toc,page]{appendix}
+\usetikzlibrary{snakes}
+\usetikzlibrary{shapes.geometric, calc}
+\author[Presenter: VCD Phuong]{\\
+	Vo Chau Duc Phuong}
+\institute[ICTP]{The Abdus Salam International Center for Theoretical Physics}
+\title{Some Thing About Me}
+\begin{document}
+	\begin{frame}
+\maketitle
+	\end{frame}
+\begin{frame}{Background}
+\begin{tabular}{ll}
+Name: & Phuong\\
+Family name:& Vo Chau\\
+University:& University of Science, VNU-HCM\\
+Major:& Physics\\
+Department:& Theoretical Physics\\
+Graduation:& Honour class, top \(1^{st}\)\\
+Location:& Ho Chi Minh city, Vietnam
+\end{tabular}
+\end{frame}
+\begin{frame}
+Internship: Institute of Physics, HCM city.\\
+\textit{Supervisor: Dr. Huynh Thanh Duc.}
+\begin{itemize}
+\item Study and doing project on solid state physics - semiconductor.\\
+\item Project: “Calculation of Shift Tensor in Transition Metal Dichalcogenide”.
+\item Undergrad thesis: "Calculation of The Linear-Absorption Spectrum of An Ideal Two-dimensional
+System of \(MoS_2\)".
+\end{itemize}
+Skills: Theory and numerical (FORTRAN, Python).
+\end{frame}
+\begin{frame}{Project:}
+Name of project: \\\quad “Calculation of Shift Tensor in Transition Metal Dichalcogenide”.
+Approach:
+\begin{itemize}
+	\item Second order perturbation in light-matter interaction\\
+	\item Tight-binding model\\
+	\item semiconductor Bloch equations
+\end{itemize}
+Methods:
+\begin{itemize}
+	\item Theoretical (in second quantization)\\
+	\item Numerical (FORTRAN, PYTHON)
+\end{itemize}
+Result:\\
+\begin{itemize}
+\item From 3-band TB + SBEs \(\to\) shift current tensor for TMD monolayers.
+\end{itemize}
+Reported in: EIER 2024.
+\end{frame}
+\begin{frame}{Calculation of Shift Tensor in Transition Metal Dichalcogenide}
+Why?
+\begin{itemize}
+\item Bulk photovoltaic (BPV) effect occurs in non-centrosymmetric materials, without the need of heterostructures or interfaces
+\item BPV effect has the potential to overcome the Shockley–Queisser limit of photon–electricity conversion in a conventional p–n junction
+\item TMD monolayers are semiconductors with a direct band gap, no center of inversion, Strong spin-orbit coupling leads to a spin splitting of hundreds meV.
+\end{itemize}
+\end{frame}
+\begin{frame}
+Based on the second perturbation of light-matter interaction:
+$$\textbf{A}(t) = \sum_p A_{\omega_p} e^{-i\omega_p t} + c.c$$
+Second-order current response:
+\begin{equation*}
+\textbf{J}^i_{shift} (\omega)= \sum_{j,k} \sigma^{i,j,k}_{shift}(\omega) A^{j*}_\omega A^k_\omega +c.c
+\end{equation*}
+Shift current tensor:
+\begin{align}
+	\sigma^{ijk}_{shift}(\omega) =& \frac{e^3}{L^2 \hbar^2 m^3} \sum_{c,v,\textbf{k}} \frac{p^k_{cv}(\textbf{k})}{(\varepsilon_c(\textbf{k}) - \varepsilon_v(\textbf{k}))/\hbar -\omega -i\gamma}\nonumber\\
+	&\times \bigg[\sum_{\lambda \neq c} \frac{p^{j}_{v\lambda}(\textbf{k})p^{i}_{\lambda c}(\textbf{k})}{(\varepsilon_c(\textbf{k}) - \varepsilon_\lambda(\textbf{k}))/\hbar -\omega -i\gamma} \nonumber\\&\qquad - \sum_{\lambda \neq v} \frac{p^{i}_{v\lambda}(\textbf{k})p^{j}_{\lambda c}(\textbf{k})}{(\varepsilon_\lambda(\textbf{k}) - \varepsilon_v(\textbf{k}))/\hbar -\omega -i\gamma} \bigg] 
+\end{align}
+\end{frame}
+\begin{frame}{Project also is my thesis:}
+"Calculation of The Linear-Absorption Spectrum \\\hspace{4cm}of An Ideal Two-dimensional
+System of \(MoS_2\)"
+Approach:
+\begin{itemize}
+\item semiconductor Bloch Equations
+\item Hatree-Fock Approximation to include the Coulomb interaction
+\end{itemize}
+Methods:
+\begin{itemize}
+	\item Theoretical (in second quantization)\\
+	\item Numerical (FORTRAN run in parallel)
+\end{itemize}
+Result:\\
+\begin{itemize}
+\item Confirm the exciton binding energy in agree with experiment results.\\
+\end{itemize}
+Reported in front of:
+\begin{center}
+	Department of Theoretical physics (HCMUS-VNU)
+\end{center}
+\end{frame}
+\begin{frame}{Current Status}
+Diploma student in ICTP:
+\begin{itemize}
+\item First semester: All E (Excellent) grades.\\
+\item Second semester (currently): studying DFT, Superconductivity, Advantage Numerical Method,...\\
+\item Third semester (incoming): Doing thesis with prof. Natasha Stojic and available for other projects.
+\end{itemize}
+Research Interest:
+\begin{itemize}
+\item Quantum Hall Effect (Especially in Integer Quantum Hall effect, seft-taught).
+\item Solid state physics, semiconductor physics (have experience).
+\item Second phase-transition (Applying Landau-Ginzburg theory) in condensed matter (studying).
+\end{itemize}
+\end{frame}
+\begin{frame}
+\begin{center}
+	Thank You For Your Interest.
+\end{center}
+\end{frame}
+\end{document}

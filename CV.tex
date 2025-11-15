@@ -20,6 +20,7 @@
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \usepackage{graphicx}
+\usepackage{ragged2e}
 \input{glyphtounicode}
 
 %---------- FONT OPTIONS ----------
@@ -139,7 +140,7 @@
 	%---------- HEADING ----------
 	
 	\begin{center}
-		\textbf{\Huge \scshape Vo Chau Duc Phuong} \\ \vspace{3pt}
+		\textbf{\Huge \scshape Vo Chau Duc \underline{Phuong}} \\ \vspace{3pt}
 		\small
 		\faMobile \hspace{.5pt} \href{tel:84949103584}{(+84) 949 103 584}
 		$|$
@@ -151,7 +152,7 @@
 		$|$
 		%\faGlobe \hspace{.5pt} \href{https://arasgungore.github.io}{Portfolio}
 		%$|$
-\faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/fofi8NRNuw2UJQnP6}{\color{blue}Trieste, Italy}
+\faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/fofi8NRNuw2UJQnP6}{\color{blue}An Giang, Vietnam}
 		
 	\end{center}
 	
@@ -162,12 +163,12 @@
 \vspace{-0.5cm}
 \begin{table}[!ht]
 \hspace{0.5cm}	\begin{tabular}{l l l}
-		Given name      & : \hspace{0.2cm}\null & Duc Phuong              \\
-		Family name   & :  & Vo Chau             \\
-		Date of Birth \hspace{0.2cm}\null & :  & 24/09/2002          \\
-		Nationality   & : & Vietnamese          \\
-		Birthplace & :  & An Giang, Vietnam 
-		
+Given name      & : \hspace{0.2cm}\null & Phuong \\
+Middle name & : & Chau Duc \\
+Family name   & :  & Vo \\
+Date of Birth \hspace{0.2cm}\null & :  & 24/09/2002\\
+Nationality   & : & Vietnamese\\
+Birthplace & :  & An Giang, Vietnam 
 	\end{tabular}
 \end{table}
 \vspace{-0.5cm}
@@ -175,11 +176,15 @@
 	\vspace{3pt}
 	\resumeSubHeadingListStart
 	\resumeEducationHeading
+	{University of Grenoble-Alps}{Grenoble, France}
+	{PhD student}{Nov 2025 \textbf{--} October 2028}
+	{}{}
+	\resumeEducationHeading
 	{The Abdus Salam International Center for Theoretical Physics (ICTP)
 		% \normalfont{(Admission rate: 0.09\%)}
 	}{Trieste, Italy}
-	{Diploma student, pre-PhD course}{Sep 2024 \textbf{--} Now}
-	{Condensed matter and statistical physics}{}
+	{Diploma student, pre-PhD course}{Sep 2024 \textbf{--} August 2025}
+	{Condensed matter and statistical physics, Best student of section}{}
 	\resumeEducationHeading
 	{University of Science
 		% \normalfont{(Admission rate: 0.09\%)}
@@ -212,6 +217,16 @@
 	\section{Research Experience}
 	\vspace{3pt}
 	\resumeSubHeadingListStart
+\resumeSubheading{Laboratoire de Physique et Modélisation des Milieux Condensés, CNRS}{Grenoble, France}{PhD Full-time Working}{Nov 2025 \textbf{--} October 2028}
+%\resumeItemListStart
+%\resumeItem{\justifying{}}
+
+%\resumeItemListEnd
+\resumeSubheading{The Abdus Salam International Center for Theoretical Physics}{Trieste, Italy}{Internship}{May 2025 \textbf{--} August 2025}
+\resumeItemListStart
+\resumeItem{\justifying{Working on Altermagnetic material RuO\(_2\) with the DFT calculation using GGA + U approach. Porting to Wannier90 to minimized the localize Wannier's function and attempt to calculate the transport properties.}}
+	
+	\resumeItemListEnd
 	
 	%\resumeSubheading
 	%{Avikon}{Istanbul, Turkey}
@@ -227,55 +242,59 @@
 	{Institute of Applied Mechanics and Informatics}{Ho Chi Minh city, Vietnam}
 	{Internship}{Feb 2023 \textbf{--} July 2024}
 	\resumeItemListStart
-\resumeItem{Worked on the “Calculation of Shift Tensor in Transition Metal Dichalcogenide” project under the supervision of \href{https://scholar.google.com.vn/citations?user=EecHVyQAAAAJ&hl=en}{\color{blue} Dr. Huynh Thanh Duc}. Investigating the shift current induced by optical excitation in two-dimensional transition metal dichalcogenides. 
-	%Our approach is based on a second-order perturbation expansion of the semiconductor Bloch equations which are formulated in the basis of a three-band tight-binding model. From that, shift current tensors have been calculated for several different materials and their dependence on photon energy has been investigated and discussed. 
-	Results have been reported in the International Conference on Energy, Infrastructure and Environmental Research (\href{	https://doi.org/10.1051/e3sconf/202449602002}{\color{blue}EIER 2024}).}
-	\resumeItem{Worked on my bachelor thesis: “Calculation of The Linear-Absorption Spectrum of An Ideal Two-dimensional System of \(MoS_2\)”.
- %Using Semiconductor Bloch Equations, the Coulomb interaction had been taken into account using the Hatree-Fock approximation. This work confirms the exciton binding energy in \(MoS_2\) in agreement with experiments using a model with a minimum number of energy bands.
-The findings were presented to the Department of Theoretical Physics at the University of Science in Ho Chi Minh City, Vietnam, receiving a grade of \textbf{9.4/10.}}
+\resumeItem{\begin{justify}{Worked on the “Calculation of Shift Tensor in Transition Metal Dichalcogenide” project under the supervision of \href{https://scholar.google.com.vn/citations?user=EecHVyQAAAAJ&hl=en}{\color{blue} Dr. Huynh Thanh Duc}. Investigating the shift current induced by optical excitation in two-dimensional transition metal dichalcogenides. Our approach is based on a second-order perturbation expansion of the semiconductor Bloch equations which are formulated in the basis of a three-band tight-binding model. From that, shift current tensors have been calculated for several different materials and their dependence on photon energy has been investigated and discussed. Results have been reported in the International Conference on Energy, Infrastructure and Environmental Research (\href{	https://doi.org/10.1051/e3sconf/202449602002}{\color{blue}EIER 2024}).} \end{justify}}
+	\resumeItem{\begin{justify}{Worked on my bachelor thesis: “Calculation of The Linear-Absorption Spectrum of An Ideal Two-dimensional System of MoS\(_2\)”. Using Semiconductor Bloch Equations, the Coulomb interaction had been taken into account using the Hatree-Fock approximation. This work confirms the exciton binding energy in \(MoS_2\) in agreement with experiments using a model with a minimum number of energy bands.
+The findings were presented to the Department of Theoretical Physics at the University of Science in Ho Chi Minh City, Vietnam, receiving a grade of \textbf{9.4/10.}} \end{justify}}
 	\resumeItemListEnd
+
 	\resumeSubHeadingListEnd
 \section{Publication}
 \vspace{3pt}
-\hspace{0.5cm}{\small \textbf{Phuong, V. C. D.}, \& Huynh, T. D. (2024). Calculation of shift current tensors in two-dimensional transition metal dichalcogenides. E3S Web of Conferences, 496, 02002–02002. \href{	https://doi.org/10.1051/e3sconf/202449602002}{\color{blue}https://doi.org/10.1051/e3sconf/202449602002}}
+\hspace{0.5cm}{\small \textbf{ P. D. Vo Chau}, \& Huynh, T. D. (2024). Calculation of shift current tensors in two-dimensional transition metal dichalcogenides. E3S Web of Conferences, 496, 02002–02002. \href{	https://doi.org/10.1051/e3sconf/202449602002}{\color{blue}https://doi.org/10.1051/e3sconf/202449602002}}
 	%----------- AWARDS & ACHIEVEMENTS -----------
 \section{Other Academic Works}
 \subsection*{Bachelor's thesis}
 \vspace{-5pt}
 \hspace{0.5cm}{Calculation of The Linear-Absorption Spectrum of An Ideal Two-dimensional System of \(MoS_2\)}\\
 \hspace{0.6cm}\begin{tabular}{l c r}
-	\textit{Thesis: } & \hspace{0.2cm} \null& \href{https://github.com/VCDPhuong/Bachelor-Thesis/blob/37c1b5a46d3f06ed93adcf5fea8482b4f0515b45/20130008_VoChauDucPhuong.pdf}{\faGithub \hspace{.5pt}\color{blue}GitHub}\\
+	\textit{Thesis: } & \hspace{0.2cm} \null& \href{https://github.com/VCDPhuong/Bachelor-Thesis/blob/main/document.pdf}{\faGithub \hspace{.5pt}\color{blue}GitHub}\\
 %	\textit{Source code:} & & \href{https://github.com/VCDPhuong/Bachelor-Thesis/tree/37c1b5a46d3f06ed93adcf5fea8482b4f0515b45/code}{ \faGithub \hspace{.5pt}\color{blue}GitHub}\\
 \end{tabular}\\
 \hspace{0.6cm}\textit{Abstract: }Using Semiconductor Bloch Equations, the Coulomb interaction has been taken into account using the Hatree-Fock approximation. This work confirms that the exciton binding energy in \(MoS_2\) is in agreement with experiments using a model with a minimum number of energy bands.
+\subsection*{Diploma's Project Thesis}
+\vspace{-5pt}
+\hspace{0.5cm}{Altermagnetism in RuO\(_2\)}\\
+\hspace{0.6cm}\begin{tabular}{l c r}
+	\textit{Thesis: } & \hspace{0.2cm} \null& \href{https://github.com/VCDPhuong/Diploma-Thesis/blob/main/Thesis.pdf}{\faGithub \hspace{.5pt}\color{blue}GitHub}\\
+	%	\textit{Source code:} & & \href{https://github.com/VCDPhuong/Bachelor-Thesis/tree/37c1b5a46d3f06ed93adcf5fea8482b4f0515b45/code}{ \faGithub \hspace{.5pt}\color{blue}GitHub}\\
+\end{tabular}\\
+\hspace{0.6cm}\textit{Abstract: }In this work, we investigate and confirm the existence of altermagnetism as a third state of magnetism in RuO2. We also present the procedure for calculating the Berry curvature, illustrating the trace of the Dirac point in the RuO2 band structure. Testing the stability of the system under doping, we found and had a discussion on the reduction of the on-site magnetisation and Fermi level in electron doping, and its stability under hole doping.
+
 	\section{Awards \& Achievements}
 	\vspace{2pt}
-	\resumeSubHeadingListStart
+\resumeSubHeadingListStart
+\small{\item{\textbf{Best performing student in 2024-2025 Postgraduate Diploma Programme in Condensed Matter Physics} Achieved the top rank of the program in general and the best student in condensed matter physics in particular. (admission class 2024 -2025)}}
 	\small{\item{
 	\textbf{Top \(\textbf{1}^{\textbf{st.}}\) in Physics majors (both in general and honour program) at the University of Science, National University of Ho Chi Minh city:} Achieved the top \(1^{st.}\) rank in the physics class, selected for the honours program in the first year due to outstanding performance in high school. (admission class 2020-2024)
-%	\resumeItemListStart
-%	\item Completed a rigorous curriculum with a focus on advanced theoretical and experimental physics.
-%	\item Engaged in cutting-edge research projects under the guidance of experienced professors.\\
-%	\item Awarded scholarships for academic excellence and opportunities for international exchange programs.
-%	\resumeItemListEnd
-\vspace{3pt}\\
-	\textbf{Scholarship For Top Student In The Honours Class:}{ Received an award for being the top student in the honours class each semester. (2020-2023)} \\ \vspace{3pt}
-\textbf{\(2^{\textit{nd}}\) Prize in the "National Physics Olympics for College Students":}{
-%Annual Contest for college students in Vietnam, host by Phenikaa University, Hanoi, Vietnam.
-(2022)} \\
-%\resumeItemListStart
-%\item Participated in the annual national physics competition organized by \textbf{the Ministry of Education and Training}, \textbf{the Vietnam Physical Society}, and various universities.\\
-%\item Demonstrated advanced problem-solving skills and a strong understanding of physics concepts.\\
-%\item Engaged in theoretical and experimental physics challenges, showcasing creativity and analytical thinking.
-%\resumeItemListEnd
+	\resumeItemListStart
+\item Completed a rigorous curriculum with a focus on advanced theoretical and experimental physics.
+\item Engaged in cutting-edge research projects under the guidance of experienced professors.\\
+\item Awarded scholarships for academic excellence and opportunities for international exchange programs.
+	\resumeItemListEnd
 \vspace{3pt}
-			
-			% \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)} \\ \vspace{3pt}
-\textbf{Golden Medals in "Traditional 30/04 Olympiad":}{ 
-%An annual academic competition in Vietnam, primarily for high school students from the southern region. It was established by Le Hong Phong High School for the Gifted and first held in 1995.
+	\textbf{Scholarship For Top Student In The Honours Class:}{ Received an award for being the top student in the honours class each semester. (2020-2023)} \\ \vspace{3pt}
+\textbf{\(2^{\textit{nd}}\) Prize in the "National Physics Olympics for College Students":}{Annual Contest for college students in Vietnam, host by Phenikaa University, Hanoi, Vietnam.
+(2022)}
+\resumeItemListStart
+\item Participated in the annual national physics competition organized by \textbf{the Ministry of Education and Training}, \textbf{the Vietnam Physical Society}, and various universities.\\
+\item Demonstrated advanced problem-solving skills and a strong understanding of physics concepts.\\
+\item Engaged in theoretical and experimental physics challenges, showcasing creativity and analytical thinking.
+\resumeItemListEnd
+\vspace{3pt}
+\textbf{Golden Medals in "Traditional 30/04 Olympiad":}{ An annual academic competition in Vietnam, primarily for high school students from the southern region. It was established by Le Hong Phong High School for the Gifted and first held in 1995.
 (Awarded golden medals in both 2018 \& 2019)} \\ \vspace{3pt}
 \textbf{Odon-Vallet Scholarship:}{
-%The Odon Vallet Scholarship, established by Professor Odon Vallet from Sorbonne University, is awarded annually to outstanding Vietnamese students. Sponsored by the scientific and educational organization "Rencontres du Vietnam," the scholarship aims to support talented students in their academic pursuits. 
+The Odon Vallet Scholarship, established by Professor Odon Vallet from Sorbonne University, is awarded annually to outstanding Vietnamese students. Sponsored by the scientific and educational organization "Rencontres du Vietnam," the scholarship aims to support talented students in their academic pursuits. 
 (2018)}}}
 	\resumeSubHeadingListEnd
 	
@@ -342,7 +361,7 @@ The findings were presented to the Department of Theoretical Physics at the Univ
 \hspace{0.5cm}LB-301, The Abdus Salam International Center for Theoretical Physics\\
 %\hspace{0.5cm}\faMapMarker\, ICTP - Strada Costiera, 11 | 34151 | Trieste, Italy\\
 \hspace{0.5cm}\faAt\href{mailto:nstojic@ictp.it}{\color{blue}\null \hspace{1pt} nstojic@ictp.it}
-\\\hspace{0.5cm}Prof. Natasa Stojic is my lecturer in my diploma program at ICTP.
+\\\hspace{0.5cm}Prof. Natasa Stojic is my lecturer and also is the thesis's supervisor in my diploma program at ICTP.
 \resumeSubItem{\href{https://scholar.google.com.vn/citations?hl=en&user=EecHVyQAAAAJ&view_op=list_works&sortby=pubdate}{\Large Huynh Thanh Duc\faLink}}\\
 \vspace{10pt}
 \hspace{0.5cm}Researcher\\\hspace{0.5cm}Institute of Applied Mechanics and Infomatics, Vietnam Academy of Science and Technology, Vietnam \\\hspace{0.4cm}
@@ -373,7 +392,7 @@ The findings were presented to the Department of Theoretical Physics at the Univ
 \vspace{2pt}
 \resumeSubHeadingListStart
 \small{\item{
-		\textbf{Vietnamese:}{Native} \\ \vspace{3pt}
+		\textbf{Vietnamese:}{ Native} \\ \vspace{3pt}
 		\textbf{English:}{ Reading and listening: fluently, writing and speaking: good}\\ \vspace{3pt}
 		\textbf{German:}{ Beginner} \\ \vspace{3pt}
 		\textbf{Latin:}{ Beginner}
@@ -392,45 +411,53 @@ The findings were presented to the Department of Theoretical Physics at the Univ
 	Phenikaa University, Hanoi, Vietnam\\
 	University of Education, Hanoi, Vietnam
 \end{tabular}}
-%\resumeItemListStart
-%\item{\textit{Headmentor (2024)}: Organizing the program, topics and given lecture for student in physics section and join in the project committee at the final day's presentation.}\\
-%\item{\textit{Mentor (2023)}: Preparing and giving the lectures on multiple topics in Physics and join in the project committee at the final day's presentation.}
-%\resumeItemListEnd
-\resumeSubheading{Newton-Einstein-Schrödinger NES academic club}{\textit{2020-2024}}{Member}{}
-%\resumeItemListStart
-%\item{\textit{As Junior:} Prepared and delivered tutorial classes for final examinations. Participated as a volunteer with the NES club during summer and spring sessions.}\\
-%\item{\textit{As Senior:} Mentored the Juniors in multiple skills, helping them prepare for the tutorial class, and acting as a node between the student union of faculty and the club.}
-%\resumeItemListEnd
+\resumeItemListStart
+\item{\textit{Headmentor (2024)}: Organizing the program, topics and given lecture for student in physics section and join in the project committee at the final day's presentation.}\\
+\item{\textit{Mentor (2023)}: Preparing and giving the lectures on multiple topics in Physics and join in the project committee at the final day's presentation.}
+\resumeItemListEnd
+\resumeSubheading{Newton-Einstein-Schrödinger NES academic club}{\textit{2020-2024}}{Member}{Ho Chi Minh University of Science}
+\resumeItemListStart
+\item{\textit{As Junior:} Prepared and delivered tutorial classes for final examinations. Participated as a volunteer with the NES club during summer and spring sessions.}\\
+\item{\textit{As Senior:} Mentored the Juniors in multiple skills, helping them prepare for the tutorial class, and acting as a node between the student union of faculty and the club.}
+\resumeItemListEnd
 \resumeSubheading{Physics student Union}{\textit{2020-2021}}{President}{Ho Chi Minh University of Science}
-%\resumeItemListStart
-%\item{Organizing and managing the volunteering program within the major. Providing assistance and input on various issues for the faculty's student union.}
-%\item{Collaborated with the student union to represent the collective voice of the student body in discussions and decision-making processes.}
-%\item{Actively participated in initiatives aimed at improving the student experience and fostering a positive academic environment.}
-%\resumeItemListEnd
+\resumeItemListStart
+\item{Organizing and managing the volunteering program within the major. Providing assistance and input on various issues for the faculty's student union.}
+\item{Collaborated with the student union to represent the collective voice of the student body in discussions and decision-making processes.}
+\item{Actively participated in initiatives aimed at improving the student experience and fostering a positive academic environment.}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 \subsection*{Volunteer}
 \resumeSubHeadingListStart
 \resumeOrganizationHeading{\href{https://ilpiccolo.gelocal.it/trieste/cronaca/2024/11/15/news/ictp_trieste_60_anni_scienza-14808715/}{ICTP \(\textbf{60}^{\textbf{th}}\) Anniversary\faLink}}{Trieste, Italy}{Member}{November 2024}
-%\resumeItemListStart
-%\item{Presented in Budinich Lecture Hall, helped in guilding participants into seat. Guilding the guest to their destination in ICTP's building.}
-%\item{Helping other member in guiding and answer's guest questions}
-%\resumeItemListEnd
+\resumeItemListStart
+\item{Presented in Budinich Lecture Hall, helped in guilding participants into seat. Guilding the guest to their destination in ICTP's building.}
+\item{Helping other member in guiding and answer's guest questions}
+\resumeItemListEnd
+
+
+\resumeOrganizationHeading{\href{https://maps.app.goo.gl/s6ppvUH5ecWzzMXT6}{Tutoring For a student in SOS Village\faLink}}{Ben Tre province, Vietnam}{Member}{2022}
+\resumeItemListStart
+\item{Tutoring the student according to his school's work and help him prepare for the exam.}
+\item{Inspire him to continue follow the study and pursuit a university degree.}
+\resumeItemListEnd
+
 \resumeOrganizationHeading{Volunteer Spring}{Ho Chi Minh city, Vietnam}{Member}{2022 \& 2023}
-%\resumeItemListStart
-%\item{Prepared and delivered the academic physics seminar for elementary and high school students. Inspiring them to follow the scientific job.}
-%\item{Assisted in the preparation of "Banh Chung \& Banh Tet," traditional cakes for the Lunar New Year, contributing to a warm and festive atmosphere for the local community during New Year's Eve.}
-%\resumeItemListEnd
+\resumeItemListStart
+\item{Prepared and delivered the academic physics seminar for elementary and high school students. Inspiring them to follow the scientific job.}
+\item{Assisted in the preparation of "Banh Chung \& Banh Tet," traditional cakes for the Lunar New Year, contributing to a warm and festive atmosphere for the local community during New Year's Eve.}
+\resumeItemListEnd
 \resumeOrganizationHeading{\href{https://fb.watch/wZd1tcJeh3?t=860
 }{Green Summer Campaign\faLink}}{University of Science, Ho Chi Minh city, Vietnam}{Member}{2022 \& 2023}
-%\resumeItemListStart
-%\item{Prepared and delivered the academic physics seminar for elementary and high school students. Inspiring them to follow the scientific job.}
-%\item{Organized and guided a field trip through various laboratory facilities at the University of Science. Developed and facilitated a set of questions to encourage student engagement and foster inquiry.}
-%\resumeItemListEnd
+\resumeItemListStart
+\item{Prepared and delivered the academic physics seminar for elementary and high school students. Inspiring them to follow the scientific job.}
+\item{Organized and guided a field trip through various laboratory facilities at the University of Science. Developed and facilitated a set of questions to encourage student engagement and foster inquiry.}
+\resumeItemListEnd
 \resumeOrganizationHeading{Charity Meal}{Ho Chi Minh city, Vietnam}{Member}{2021 \& 2023}
-%\resumeItemListStart
-%\item{Assisted in preparing ingredients and cooking meals for community charity events at local pagodas. Coordinated the packing and transportation of meals to delivery sites, ensuring timely service.}
-%\item{Organized and managed the extensive disk cleaning process afterward.}
-%\resumeItemListEnd
+\resumeItemListStart
+\item{Assisted in preparing ingredients and cooking meals for community charity events at local pagodas. Coordinated the packing and transportation of meals to delivery sites, ensuring timely service.}
+\item{Organized and managed the extensive dish cleaning process afterward.}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 %\subsection*{Schools and Programs}
 %\resumeSubHeadingListStart
